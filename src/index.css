@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body{
+  padding: 4rem 8rem 0 8rem;
+}
+
+@media (max-width: 1100px) {
+  body {
+    padding: 1rem 1rem 0 1rem;
+  }
+}
+
+.rfm-overlay{
+  --gradient-width: 100px !important;
+}
